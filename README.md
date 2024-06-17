@@ -76,6 +76,13 @@ The following technologies come into play
 Here are some configs, that will help to achieve your goal:
 
 ```
+/* OSMOSIS NODE ENDPOINTS */
+
+RPC=https://rpc-osmosis.blockapsis.com
+REST=https://lcd-osmosis.blockapsis.com
+
+
+
 /* MARS PROTOCOL CONTRACTS */
 
 {
