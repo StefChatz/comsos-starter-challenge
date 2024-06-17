@@ -6,7 +6,7 @@ First, install all dependencies and run the development server:
 
 ```bash
 yarn install
-# after the installation is finished run the development server
+# after the installation is finished, run the development server
 yarn dev
 ```
 
@@ -16,9 +16,9 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 Style the app as you see fit. There is no requirement to make it look a specific way.
 
-## The Baselayer
+## The Base Layer
 
-This repository was created to provide a baselayer for the challenges listed below.
+This repository was created to provide a base layer for the challenges listed below.
 
 The following technologies come into play
 
@@ -30,12 +30,12 @@ The following technologies come into play
 ### The Challenge
 
 1. **Wallet Connector**\
-   Setup a wallet connector using the [cosmos-kit](https://github.com/cosmology-tech/cosmos-kit) from Cosmology.\
-   Make sure to connect the wallet to the `osmois-1` blockchain and display a connect button.
-   Enable at least the [Keplr Wallet](https://keplr.app) to establish a connection. The more wallets you enable, the better.
+   Set up a wallet connector using the [cosmos-kit](https://github.com/cosmology-tech/cosmos-kit) from Cosmology.\
+   Make sure to connect the wallet provider to the `osmosis-1` blockchain and display a connect button.
+   To establish a connection, enable at least the [Keplr Wallet](https://keplr.app).
 2. **Mint a Credit Account**\
    After the user is connected via a web3 Cosmos Wallet extension (like Keplr), show a `Mint Credit Account` button that executes a `mint` message to the [Mars Protocol Account NFT contract](https://celatone.osmosis.zone/osmosis-1/execute?contract=osmo1450hrg6dv2l58c0rvdwx8ec2a0r6dd50hn4frk370tpvqjhy8khqw7sw09&msg=ewogICJtaW50Ijoge30KfQ%3D%3D).\
-    For Clients and queries, please check the generated types in the `src/types/generated` folder of the project.
+    For clients and queries, please check the generated types in the projects `src/types/generated` folder.
 3. **Fetch Mars Credit Accounts**\
    Fetch the credit accounts the wallet has minted on the [Osmosis Outpost of the Mars Protocol](https://osmosis.marsprotocol.io) via the `tokens` query.
 
@@ -49,8 +49,8 @@ The following technologies come into play
    ```
 
 4. **BONUS: Fund Credit Account**\
-   _After completing step 2 and 3 you learned how to execute messages and query contracts on the a Cosmos blockchain._\
-   The next step would be to fund a minted credit account, that is owned by the connected wallet. For this, you need to use the `update_credit_account` message of the [Mars Protocol Credit Manager Contract](https://celatone.osmosis.zone/osmosis-1/execute?contract=osmo1f2m24wktq0sw3c0lexlg7fv4kngwyttvzws3a3r3al9ld2s2pvds87jqvf&msg=ewogICJ1cGRhdGVfY3JlZGl0X2FjY291bnQiOiB7fQp9)
+   _After completing steps 2 and 3, you learned how to execute messages and query contracts on the Cosmos blockchain._\
+   The next step would be to fund a minted credit account, owned by the connected wallet. For this, you need to use the `update_credit_account` message of the [Mars Protocol Credit Manager Contract](https://celatone.osmosis.zone/osmosis-1/execute?contract=osmo1f2m24wktq0sw3c0lexlg7fv4kngwyttvzws3a3r3al9ld2s2pvds87jqvf&msg=ewogICJ1cGRhdGVfY3JlZGl0X2FjY291bnQiOiB7fQp9).
 
    ```
     {
@@ -69,7 +69,7 @@ The following technologies come into play
    ```
 
 5. **BONUS: Display Credit Account Positions**\
-   To test if you really mastered the art of fetching contracts on a Cosmos blockchain, try to display the positions of the credit accounts of the connected wallet.
+   To test if you mastered the art of fetching contracts on a Cosmos blockchain, try to display the positions of the credit accounts of the connected wallet.
 
 ### Config
 
@@ -111,7 +111,7 @@ Here are some configs, that will help to achieve your goal:
 
 ### Repositories to look at
 
-These Repositories can help you find implementation examples, if you get stuck:
+These Repositories can help you find implementation examples if you get stuck:
 
 - [Cosmology Create Cosmos App](https://github.com/cosmology-tech/create-cosmos-app)
 - [Mars Protocol Outpost](https://github.com/mars-protocol/mars-v2-frontend)
