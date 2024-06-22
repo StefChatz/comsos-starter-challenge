@@ -9,7 +9,7 @@ import ConnectButton from './components/ConnectButton';
 
 const queryClient = new QueryClient();
 
-const NavBar = ({ children }: { children: React.ReactNode }) => {
+const MarsProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <QueryClientProvider client={queryClient}>
@@ -22,4 +22,4 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default NavBar;
+export default MarsProvider;
